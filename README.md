@@ -27,3 +27,14 @@ This makes it very easy to communicate and more than that, it makes it easy to s
 broken down into issues, where issues are incomplete, and what the next steps to be taken in general are.
 
 All of this is expandable by more features which can be added later once the first version is complete.
+
+## Instructions for contributors
+1. Make sure you have ruby installed. Type `ruby -v` to check.
+
+2. `gem install rails` or `sudo gem install rails -v 5.1.6`
+
+3. `bundle install` or `sudo bundle install`
+
+4. `yarn install`
+
+5. To run the server: `rails server`
