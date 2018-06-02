@@ -14,7 +14,7 @@ nicate efficiently about goals, tasks, assignees and issues.
 A lot of planning will be very inefficient because it is not concentrated on github etc plus maybe one other site but
 takes place on slack as a chat tool, maybe trello for planning, etc etc. So discussions may need to be repeated 3
 or 4 times before everyone can agree on what issue to create by whom and who to assign it since the open source
-team may be remote from each other, have no hierarchy, and 
+team may be remote from each other, have no hierarchy, and
 
 This website should be able to coordinate this by putting everything in one place and, differently from
 more complicated tools, make everything simple and give a good overview of the project and the coordination.
