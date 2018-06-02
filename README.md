@@ -27,3 +27,28 @@ This makes it very easy to communicate and more than that, it makes it easy to s
 broken down into issues, where issues are incomplete, and what the next steps to be taken in general are.
 
 All of this is expandable by more features which can be added later once the first version is complete.
+
+
+## Instructions for contributors
+
+### Initial setup
+1. Make sure you have ruby installed. Type `ruby -v` to check.
+
+2. `gem install rails` or `sudo gem install rails -v 5.1.6`
+
+3. `bundle install` or `sudo bundle install`
+
+4. `yarn install`
+
+### How to run the app
+
+To run the server: `rails server`
+
+### Set up database
+
+1. Install MySQL. On a mac, you can do: `brew install mysql`
+2. `rake db:create`
+3. `rake db:migrate`
+Note: in your secrets.yml file, you'll see a db_user=root and a blank value for the password.
+
+
