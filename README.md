@@ -1,6 +1,8 @@
 # fabricator
 A project management tool to coordinate open source teams.
 
+Want to contribute? Just read our CONTRIBUTING.md.
+
 This project is open to anyone, newcomer or professional, who is interested in helping out.
 
 The goal is to create a website that can track and create issues on github
