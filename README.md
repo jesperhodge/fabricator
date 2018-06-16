@@ -53,9 +53,8 @@ To run the server: `rails server`
 3. `rake db:migrate`
 Note: in your secrets.yml file, you'll see a db_user=root and a blank value for the password.
 
-### Start the React server 
+Don't forget to start the mysql server! Depending on your mysql installation and OS, you can do `mysql.server start`.
+
+### Start the React server
 1. `bin/webpack-dev-server`
 This runs at the same time as `rails server`
-
-
-
