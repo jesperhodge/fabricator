@@ -9,6 +9,10 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 
+gem 'bcrypt'
+
+gem 'authlogic'
+
 gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -43,6 +47,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'selenium-webdriver'
+  gem 'letter_opener'
 end
 
 group :development do

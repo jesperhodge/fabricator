@@ -51,6 +51,7 @@ To run the server: `rails server`
 1. Install MySQL. On a mac, you can do: `brew install mysql`
 2. `rake db:create`
 3. `rake db:migrate`
+4. `rake db:seed`
 Note: in your secrets.yml file, you'll see a db_user=root and a blank value for the password.
 
 Don't forget to start the mysql server! Depending on your mysql installation and OS, you can do `mysql.server start`.
