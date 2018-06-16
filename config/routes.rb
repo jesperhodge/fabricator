@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  get 'home', to: 'home#index'
-  get 'project', to: 'home#project'
-
+  root to: 'home#project'
+  match '*path', to: 'home#index', via: :get
 end

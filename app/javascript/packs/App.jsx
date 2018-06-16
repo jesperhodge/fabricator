@@ -1,12 +1,14 @@
 import React from 'react';
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import Project from "./project";
+import Dashboard from "./dashboard";
 
 const App = () => (
-    <div className="ui container">
-        <Route path="/project" exact component={Project} />
-    </div>
+  <Switch className="ui container">
+    <Route exact path="/" component={Dashboard} />
+    <Route path="/project" component={Project} />
+  </Switch>
 );
 
 export default App;
