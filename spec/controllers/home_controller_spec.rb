@@ -1,7 +1,12 @@
 require 'rails_helper'
 
-Rspec.describe 'test rspec itself' do
-  it 'tests' do
-    expect(1).to eq(1)
+RSpec.describe HomeController, type: :controller do
+  let(:body) do
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  it 'tests home controller' do
+    post :test
+    expect(body[:test]).to eq('Tested.')
   end
 end
