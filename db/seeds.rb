@@ -5,4 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Admin.create(email: 'developer@fabricator.com', password: 'fabricator1234')
+
+## Not working yet due to Authlogic Changes
+## Admin.create(email: 'developer@fabricator.com', password: 'fabricator1234')
