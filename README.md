@@ -3,6 +3,12 @@ A project management tool to coordinate open source teams.
 
 Want to contribute? Just read our CONTRIBUTING.md.
 
+### What's up next?
+
+The following week we are focusing on getting user authentication up and running (Front- and Backend).
+
+### About:
+
 Ideas for how it will look like:
 
 https://precursorapp.com/document/fabricator-17592207269868
