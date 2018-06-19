@@ -52,18 +52,13 @@ All of this is expandable by more features which can be added later once the fir
 
 4. `yarn install`
 
+5. `rake db:create`
+
+6. `rake db:migrate`
+
 ### How to run the app
 
 To run the server: `rails server`
-
-### Set up database
-
-1. Install MySQL. On a mac, you can do: `brew install mysql`
-2. `rake db:create`
-3. `rake db:migrate`
-Note: in your secrets.yml file, you'll see a db_user=root and a blank value for the password.
-
-Don't forget to start the mysql server! Depending on your mysql installation and OS, you can do `mysql.server start`.
 
 ### Start the React server
 1. `bin/webpack-dev-server`
