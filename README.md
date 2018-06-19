@@ -43,6 +43,9 @@ All of this is expandable by more features which can be added later once the fir
 
 ## Instructions for contributors
 
+### Database
+We just switched to postgresql. You need to have it installed and running for the app to work.
+
 ### Initial setup
 1. Make sure you have ruby installed. Type `ruby -v` to check.
 
