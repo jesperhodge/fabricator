@@ -44,6 +44,14 @@ broken down into issues, where issues are incomplete, and what the next steps to
 
 All of this is expandable by more features which can be added later once the first version is complete.
 
+## Core features for the app!!
+- (if possible real-time updating) chat scoped to each issue so you don't have to discuss stuff in slack but then transfer everything to the issues when you have decided something.
+
+- different notifications for if you are mentioned in the chat on one of the issues or if there are open questions or To Do's concerning you. the notifications are really clear and visible.
+
+- As you can see in the sketch, you also have an overview page with a list of issues where you can create some, change them, have the related chat or commenting, and the issues are broken down into larger "epics" and actual issues directly mirroring github (or gitlab, bitbucket...) issues. You can change issues into epics directly.
+
+If possible find a way to delve even deeper into this functionality so you can immediately see which epics require more issues, which issues require definition (that then every project member can take part in much easier), and that there is a kind of queue of suggestions for each user what they can do next to advance the project - like define issues, finish to do's or issues, respond to questions in issue comments, etc, and the admins can change what is included in that queue. But that part is a bit more complex and the UX has to be planned out and really good for it to work.
 
 ## Instructions for contributors
 
