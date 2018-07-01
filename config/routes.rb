@@ -3,7 +3,11 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
 
-  post 'admins/login', to: 'admin_sessions#login', controller: 'admin_sessions'
+  resources :admins, only: [] do
+    collection do
+      post :login, controller: 'admin_sessions'
+    end
+  end
 
   post 'test', to: 'home#test'
   match '*path', to: 'home#index', via: :get

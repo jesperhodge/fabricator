@@ -1,2 +1,2 @@
-class AdminSession < AuthLogic::Session::Base
+class AdminSession < Authlogic::Session::Base
 end

@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Admin, type: :model do
   describe 'create' do
     it 'tests that everything works' do
-      described_class.create(first_name: 'Jesper')
+      described_class.create(email: 'jes')
       expect(described_class.last.first_name).to eq('Jesper')
     end
   end

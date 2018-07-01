@@ -5,12 +5,11 @@ class AdminSessionsController < ApplicationController
       password: admin_params[:password],
       remember_me: true
     )
-    debugger
 
     render json: {
       session: session,
-      success: (session&.errors&.messages.present?),
-      errors: (session&.errors&.messages)
+      success: (session.errors.messages.present?),
+      errors: (session.errors.messages)
     }
   end
 
