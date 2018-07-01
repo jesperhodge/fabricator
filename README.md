@@ -56,20 +56,24 @@ If possible find a way to delve even deeper into this functionality so you can i
 ## Instructions for contributors
 
 ### Database
-We just switched to postgresql. You need to have it installed and running for the app to work.
+Install PostgreSQL: https://wiki.postgresql.org/wiki/Detailed_installation_guides
 
 ### Initial setup
-1. Make sure you have ruby installed. Type `ruby -v` to check.
+1. Make sure you have ruby installed. Type `ruby -v` to check or install: https://www.ruby-lang.org/en/documentation/installation/
 
 2. `gem install rails` or `sudo gem install rails -v 5.1.6`
 
-3. `bundle install` or `sudo bundle install`
+3. Install yarn as a package manager (required by Webpack): https://yarnpkg.com/en/docs/install
 
-4. `yarn install`
+4. `bundle install` or `sudo bundle install`
 
-5. `rake db:create`
+5. `yarn install`
 
-6. `rake db:migrate`
+6. `rake db:create`
+
+7. `rake db:migrate`
+
+8. `rake db:seed`
 
 ### How to run the app
 
