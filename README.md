@@ -5,11 +5,11 @@ Want to contribute? Just read our CONTRIBUTING.md.
 
 ### What did we achieve last week?
 
-We successfully switched over to Postgresql and drafted a first sketch on how the app may look.
+We made some plans for making further progress: We decided to open a Wiki with User Stories for features, how to schedule hangouts better and maybe set clearer goals, define issues much more in-depth, and what our priority is: to get something running that makes the project interesting by having a frontend and fetching issues from the github API.
 
 ### What's up next?
 
-The following week we are focusing on getting user authentication up and running (Front- and Backend).
+The following week we are focusing on creating a visual overview of Github issues.
 
 ### About:
 
