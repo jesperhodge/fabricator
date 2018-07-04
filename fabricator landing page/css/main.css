@@ -1,0 +1,28 @@
+body{
+  position: fixed;
+  background-color: pink;
+  background-image: url('background1.jpg');
+  height: 100%;
+  width: 100%;
+}
+.container{
+   background-color: darkgrey;
+   width: 1000px;
+   height: 500px;
+   top:50%;
+   left:50%;
+   margin-top:90px;
+   margin-left:130px;
+}
+.login-info{
+  background-color: white;
+  float: left;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+.main-header{
+  top: 50px;
+  left: 50px;
+}
