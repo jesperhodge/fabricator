@@ -5,7 +5,7 @@ RSpec.describe AdminSessionsController do
 
   let(:admin) { create(:admin) }
 
-  it 'tests login response', :mark do
+  it 'tests login response' do
     post :login, params: {
       admin: {
         email: admin.email, password: admin.password
