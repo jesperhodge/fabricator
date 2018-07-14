@@ -5,12 +5,16 @@ RSpec.describe HomeController do
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  login_admin
+  before(:each) do
+    login_admin
+  end
 
   it 'tests home controller' do
     post :test
     expect(body[:test]).to eq('Tested.')
-    expect(subject.send(:current_admin_session)).to be_present
-    expect(subject.send(:current_admin)).to eq(@admin)
+  end
+
+  it 'tests admin session' do
+    expect(session[:admin_credentials]).to be_present
   end
 end

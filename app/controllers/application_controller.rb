@@ -16,12 +16,10 @@ class ApplicationController < ActionController::Base
   end
 
   def current_admin_session
-    return @current_admin_session if defined?(@current_admin_session)
-    @current_admin_session = AdminSession.find
+    AdminSession.find
   end
 
   def current_admin
-    return @current_admin if defined?(@current_admin)
-    @current_admin = current_admin_session && current_admin_session.admin
+    current_admin_session && current_admin_session.admin
   end
 end

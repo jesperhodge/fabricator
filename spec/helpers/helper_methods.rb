@@ -1,18 +1,15 @@
 module HelperMethods
   def login_admin
-    around(:each) do |example|
-      @admin = create(:admin)
+    current_controller = @controller
+    @controller = AdminSessionsController.new
 
-      @session = AdminSession.create(
-        email: @admin.email,
-        password: @admin.password,
-        remember_me: true
-      )
+    admin = create(:admin)
+    post :login, params: {
+      admin: {
+        email: admin.email, password: admin.password
+      }
+    }
 
-      @session.save
-      @current_session = AdminSession.find
-      example.run
-      @session.destroy
-    end
+    @controller = current_controller
   end
 end
