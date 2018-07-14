@@ -3,6 +3,10 @@ A project management tool to coordinate open source teams.
 
 Want to contribute? Just read our CONTRIBUTING.md.
 
+### Important change:
+
+Our main branch we work off and merge into now is `develop` - it's also protected, you cannot push to it, but it's up to date and you should create your feature branches off of it.
+
 ### What did we achieve last week?
 
 We made some plans for making further progress: We decided to open a Wiki with User Stories for features, how to schedule hangouts better and maybe set clearer goals, define issues much more in-depth, and what our priority is: to get something running that makes the project interesting by having a frontend and fetching issues from the github API.
