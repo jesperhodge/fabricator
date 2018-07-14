@@ -1,13 +1,11 @@
 # Mysql2
 
 default: &default
-  adapter: mysql2
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
-  host: 127.0.0.1
-  username: <%= Rails.application.secrets[:db_user] %>
-  password: <%= Rails.application.secrets[:db_password] %>
-  socket: /usr/local/bin/mysqld/mysqld.sock
 
 development:
   <<: *default
@@ -22,4 +20,6 @@ test:
 
 production:
   <<: *default
-  database: fabricator_production
+  database: pg_project_production
+  username: pg_project
+  password: <%= ENV['PG_PROJECT_DATABASE_PASSWORD'] %>

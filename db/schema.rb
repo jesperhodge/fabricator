@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 20180617192230) do
 
-  create_table "admins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "admins", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "email"
@@ -38,7 +41,7 @@ ActiveRecord::Schema.define(version: 20180617192230) do
     t.index ["single_access_token"], name: "index_admins_on_single_access_token", unique: true
   end
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "email"

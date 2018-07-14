@@ -4,5 +4,9 @@ FactoryBot.define do
     last_name "MyString"
     email "MyString@email.de"
     password "MyString5656"
+    password_confirmation "MyString5656"
+    active true
+    approved true
+    confirmed true
   end
 end

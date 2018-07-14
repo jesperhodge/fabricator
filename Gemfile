@@ -13,7 +13,8 @@ gem 'bcrypt'
 
 gem 'authlogic'
 
-gem 'mysql2'
+gem "pg", "~> 0.18"
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets

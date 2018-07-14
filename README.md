@@ -3,6 +3,20 @@ A project management tool to coordinate open source teams.
 
 Want to contribute? Just read our CONTRIBUTING.md.
 
+### What did we achieve last week?
+
+We made some plans for making further progress: We decided to open a Wiki with User Stories for features, how to schedule hangouts better and maybe set clearer goals, define issues much more in-depth, and what our priority is: to get something running that makes the project interesting by having a frontend and fetching issues from the github API.
+
+### What's up next?
+
+The following week we are focusing on creating a visual overview of Github issues.
+
+### About:
+
+Ideas for how it will look like:
+
+https://precursorapp.com/document/fabricator-17592207269868
+
 This project is open to anyone, newcomer or professional, who is interested in helping out.
 
 The goal is to create a website that can track and create issues on github
@@ -30,31 +44,40 @@ broken down into issues, where issues are incomplete, and what the next steps to
 
 All of this is expandable by more features which can be added later once the first version is complete.
 
+## Core features for the app!!
+- (if possible real-time updating) chat scoped to each issue so you don't have to discuss stuff in slack but then transfer everything to the issues when you have decided something.
+
+- different notifications for if you are mentioned in the chat on one of the issues or if there are open questions or To Do's concerning you. the notifications are really clear and visible.
+
+- As you can see in the sketch, you also have an overview page with a list of issues where you can create some, change them, have the related chat or commenting, and the issues are broken down into larger "epics" and actual issues directly mirroring github (or gitlab, bitbucket...) issues. You can change issues into epics directly.
+
+If possible find a way to delve even deeper into this functionality so you can immediately see which epics require more issues, which issues require definition (that then every project member can take part in much easier), and that there is a kind of queue of suggestions for each user what they can do next to advance the project - like define issues, finish to do's or issues, respond to questions in issue comments, etc, and the admins can change what is included in that queue. But that part is a bit more complex and the UX has to be planned out and really good for it to work.
 
 ## Instructions for contributors
 
+### Database
+Install PostgreSQL: https://wiki.postgresql.org/wiki/Detailed_installation_guides
+
 ### Initial setup
-1. Make sure you have ruby installed. Type `ruby -v` to check.
+1. Make sure you have ruby installed. Type `ruby -v` to check or install: https://www.ruby-lang.org/en/documentation/installation/
 
 2. `gem install rails` or `sudo gem install rails -v 5.1.6`
 
-3. `bundle install` or `sudo bundle install`
+3. Install yarn as a package manager (required by Webpack): https://yarnpkg.com/en/docs/install
 
-4. `yarn install`
+4. `bundle install` or `sudo bundle install`
+
+5. `yarn install`
+
+6. `rake db:create`
+
+7. `rake db:migrate`
+
+8. `rake db:seed`
 
 ### How to run the app
 
 To run the server: `rails server`
-
-### Set up database
-
-1. Install MySQL. On a mac, you can do: `brew install mysql`
-2. `rake db:create`
-3. `rake db:migrate`
-4. `rake db:seed`
-Note: in your secrets.yml file, you'll see a db_user=root and a blank value for the password.
-
-Don't forget to start the mysql server! Depending on your mysql installation and OS, you can do `mysql.server start`.
 
 ### Start the React server
 1. `bin/webpack-dev-server`
