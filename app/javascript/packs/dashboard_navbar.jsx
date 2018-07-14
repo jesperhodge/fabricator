@@ -1,26 +1,39 @@
 import React, { Component } from 'react'
+import {
+  Navbar,
+  NavbarBrand,
+  Nav,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavItem,
+  NavLink,
+} from 'reactstrap'
 
 export default class extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">Fabricator</a>
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Add
-            </a>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="#">Issue</a>
-              <a className="dropdown-item" href="#">Epic</a>
-              <a className="dropdown-item" href="#">Repo</a>
-            </div>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Settings</a>
-          </li>
-        </ul>
-      </nav>
+      <div>
+        <Navbar className="navbar navbar-expand-lg navbar-light bg-light" color="light" light expand="lg">
+          <NavbarBrand href="#">Fabricator</NavbarBrand>
+          <Nav className="mr-auto" navbar>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret className="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true">
+                Add
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem href="#">Issue</DropdownItem>
+                <DropdownItem href="#">Epic</DropdownItem>
+                <DropdownItem href="#">Repo</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink href="#">Settings</NavLink>
+            </NavItem>
+          </Nav>
+        </Navbar>
+      </div>
     )
   }
 }
