@@ -10,6 +10,7 @@ RSpec.describe HomeController do
   it 'tests home controller' do
     post :test
     expect(body[:test]).to eq('Tested.')
-    expect(@current_session).to be_present
+    expect(subject.send(:current_admin_session)).to be_present
+    expect(subject.send(:current_admin)).to eq(@admin)
   end
 end

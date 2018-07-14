@@ -1,11 +1,11 @@
 module HelperMethods
   def login_admin
     around(:each) do |example|
-      admin = create(:admin)
+      @admin = create(:admin)
 
       @session = AdminSession.create(
-        email: admin.email,
-        password: admin.password,
+        email: @admin.email,
+        password: @admin.password,
         remember_me: true
       )
 
