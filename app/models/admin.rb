@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Admin < ApplicationRecord
   acts_as_authentic do |conf|
     conf.crypto_provider = Authlogic::CryptoProviders::BCrypt

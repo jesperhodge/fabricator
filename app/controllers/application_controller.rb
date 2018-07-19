@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
@@ -20,6 +22,6 @@ class ApplicationController < ActionController::Base
   end
 
   def current_admin
-    current_admin_session && current_admin_session.admin
+    current_admin_session&.admin
   end
 end

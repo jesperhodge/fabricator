@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module HelperMethods
   def login_admin
     current_controller = @controller

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AdminSessionsController < ApplicationController
   def login
     session = AdminSession.new(
@@ -14,7 +16,20 @@ class AdminSessionsController < ApplicationController
     }
   end
 
+  def logout
+    success = session.destroy
+
+    render json: {
+      success: success && !current_admin_session.present?,
+      errors: session&.errors&.messages
+    }
+  end
+
   protected
+
+  def session
+    current_admin_session
+  end
 
   def skip_authentication?
     true
