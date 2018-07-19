@@ -7,7 +7,9 @@ Rails.application.routes.draw do
 
   resources :admins, only: [] do
     collection do
+      get :current_admin
       post :login, controller: 'admin_sessions'
+      post :logout, controller: 'admin_sessions'
     end
   end
 

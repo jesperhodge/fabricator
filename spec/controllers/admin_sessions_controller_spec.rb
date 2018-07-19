@@ -15,8 +15,8 @@ RSpec.describe AdminSessionsController do
     }
 
     expect(body[:success]).to be(true)
-    # expect(subject.send(:current_admin_session)).to be_present
-    # expect(subject.send(:current_admin)).to eq(@admin)
+    expect(subject.send(:current_admin_session)).to be_present
+    expect(subject.send(:current_admin)).to eq(admin)
   end
 
   it 'returns "success: false" if the login fails' do
@@ -27,7 +27,26 @@ RSpec.describe AdminSessionsController do
     }
 
     expect(body[:success]).to be(false)
-    # expect(subject.send(:current_admin_session)).to be_present
-    # expect(subject.send(:current_admin)).to eq(@admin)
+    expect(subject.send(:current_admin_session)).not_to be_present
+    expect(subject.send(:current_admin)).to be_nil
+  end
+
+  describe 'logout' do
+    before(:each) do
+      post :login, params: {
+        admin: {
+          email: admin.email, password: admin.password
+        }
+      }
+
+      expect(body[:success]).to be(true)
+      expect(subject.send(:current_admin_session)).to be_present
+    end
+
+    it 'tests logout' do
+      post :logout
+      expect(body[:success]).to be(true)
+      expect(subject.send(:current_admin_session)).not_to be_present
+    end
   end
 end

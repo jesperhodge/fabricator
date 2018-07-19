@@ -14,6 +14,8 @@ gem 'bcrypt'
 
 gem 'authlogic'
 
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
 gem 'pg', '~> 0.18'
 
 # Use Puma as the app server

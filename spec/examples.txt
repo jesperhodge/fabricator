@@ -1,9 +1,11 @@
-example_id                                                | status  | run_time        |
---------------------------------------------------------- | ------- | --------------- |
-./spec/controllers/admin_sessions_controller_spec.rb[1:1] | passed  | 0.26361 seconds |
-./spec/controllers/admin_sessions_controller_spec.rb[1:2] | passed  | 0.16546 seconds |
-./spec/controllers/home_controller_spec.rb[1:1]           | passed  | 0.17395 seconds |
-./spec/controllers/home_controller_spec.rb[1:2]           | passed  | 0.16616 seconds |
-./spec/models/admin_spec.rb[1:1:1]                        | passed  | 0.12896 seconds |
-./spec/models/admin_spec.rb[1:2:1]                        | passed  | 0.08499 seconds |
-./spec/models/user_spec.rb[1:1]                           | pending | 0.00002 seconds |
+example_id                                                  | status  | run_time        |
+----------------------------------------------------------- | ------- | --------------- |
+./spec/controllers/admin_sessions_controller_spec.rb[1:1]   | passed  | 0.38401 seconds |
+./spec/controllers/admin_sessions_controller_spec.rb[1:2]   | passed  | 0.18652 seconds |
+./spec/controllers/admin_sessions_controller_spec.rb[1:3:1] | passed  | 0.17671 seconds |
+./spec/controllers/admins_controller_spec.rb[1:1]           | passed  | 0.30252 seconds |
+./spec/controllers/home_controller_spec.rb[1:1]             | passed  | 0.17395 seconds |
+./spec/controllers/home_controller_spec.rb[1:2]             | passed  | 0.16616 seconds |
+./spec/models/admin_spec.rb[1:1:1]                          | passed  | 0.12896 seconds |
+./spec/models/admin_spec.rb[1:2:1]                          | passed  | 0.08499 seconds |
+./spec/models/user_spec.rb[1:1]                             | pending | 0.00002 seconds |

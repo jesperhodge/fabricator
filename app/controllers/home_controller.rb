@@ -9,6 +9,8 @@ class HomeController < ApplicationController
     render json: { test: 'Tested.' }
   end
 
+  # TODO: Remove
+  # Allows developers to reach the frontend, for now.
   def skip_authentication?
     true
   end
