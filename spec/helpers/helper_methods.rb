@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 module HelperMethods
-  def login_admin(admin: nil)
+  def login_user(user: nil)
     current_controller = @controller
-    @controller = AdminSessionsController.new
+    @controller = UserSessionsController.new
 
-    admin ||= create(:admin)
+    user ||= create(:user)
     post :login, params: {
-      admin: {
-        email: admin.email, password: admin.password
+      user: {
+        email: user.email, password: user.password
       }
     }
 

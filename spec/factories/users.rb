@@ -2,9 +2,13 @@
 
 FactoryBot.define do
   factory :user do
-    first_name 'MyString'
-    last_name 'MyString'
-    email 'MyString'
-    password 'MyString'
+    first_name Faker::Name.first_name
+    last_name Faker::Name.last_name
+    email Faker::Internet.unique.email
+    password 'MyString5656'
+    password_confirmation 'MyString5656'
+    active true
+    approved true
+    confirmed true
   end
 end

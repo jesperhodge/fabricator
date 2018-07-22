@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 # Description: API endpoint for managing sessions, logging in and out.
-class AdminSessionsController < ApplicationController
+class UserSessionsController < ApplicationController
   def login
-    session = AdminSession.new(
-      email: admin_params[:email],
-      password: admin_params[:password],
+    session = UserSession.new(
+      email: user_params[:email],
+      password: user_params[:password],
       remember_me: true
     )
 
@@ -18,7 +18,7 @@ class AdminSessionsController < ApplicationController
   end
 
   def logout
-    running_session = current_admin_session
+    running_session = current_user_session
     success = running_session.destroy
 
     render json: {
@@ -34,7 +34,7 @@ class AdminSessionsController < ApplicationController
     true
   end
 
-  def admin_params
-    params.require(:admin).permit(:email, :password)
+  def user_params
+    params.require(:user).permit(:email, :password)
   end
 end

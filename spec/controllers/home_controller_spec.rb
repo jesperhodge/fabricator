@@ -8,7 +8,7 @@ RSpec.describe HomeController do
   end
 
   before(:each) do
-    login_admin
+    login_user
   end
 
   it 'tests home controller' do
@@ -16,7 +16,7 @@ RSpec.describe HomeController do
     expect(body[:test]).to eq('Tested.')
   end
 
-  it 'tests admin session' do
-    expect(session[:admin_credentials]).to be_present
+  it 'tests user session' do
+    expect(session[:user_credentials]).to be_present
   end
 end

@@ -5,11 +5,11 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
 
-  resources :admins, only: [] do
+  resources :users, only: [] do
     collection do
-      get :current_admin
-      post :login, controller: 'admin_sessions'
-      post :logout, controller: 'admin_sessions'
+      get :current_user
+      post :login, controller: 'user_sessions'
+      post :logout, controller: 'user_sessions'
     end
   end
 
