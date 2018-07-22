@@ -1,0 +1,4 @@
+// Switch to using `bootstrap/scss/bootstrap` and only import needed components
+// when ready to optimize front end. Switching to SCSS version will allow us
+// to use BS mixins.
+@import 'bootstrap/dist/css/bootstrap.min';
