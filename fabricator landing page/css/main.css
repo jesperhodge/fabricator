@@ -4,6 +4,7 @@ body{
   background-image: url('background1.jpg');
   height: 100%;
   width: 100%;
+  color: black;
 }
 .container{
    background-color: darkgrey;
@@ -25,4 +26,7 @@ body{
 .main-header{
   top: 50px;
   left: 50px;
+}
+.navbar-nav{
+  background-color: green;
 }
