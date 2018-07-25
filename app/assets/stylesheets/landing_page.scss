@@ -1,4 +1,6 @@
-body{
+@import 'bootstrap/dist/css/bootstrap.min';
+
+body {
   position: fixed;
   background-color: pink;
   background-image: url('background1.jpg');
@@ -6,16 +8,18 @@ body{
   width: 100%;
   color: black;
 }
-.container{
+
+.container {
    background-color: darkgrey;
    width: 1000px;
    height: 500px;
-   top:50%;
-   left:50%;
-   margin-top:90px;
-   margin-left:130px;
+   top: 50%;
+   left: 50%;
+   margin-top: 90px;
+   margin-left: 130px;
 }
-.login-info{
+
+.login-info {
   background-color: white;
   float: left;
   left: 0;
@@ -23,10 +27,12 @@ body{
   height: 100%;
   width: 50%;
 }
-.main-header{
+
+.main-header {
   top: 50px;
   left: 50px;
 }
-.navbar-nav{
+
+.navbar-nav {
   background-color: green;
 }
