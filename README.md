@@ -62,6 +62,8 @@ If possible find a way to delve even deeper into this functionality so you can i
 ### Database
 Install PostgreSQL: https://wiki.postgresql.org/wiki/Detailed_installation_guides
 
+Copy `database.example.yml` to `database.yml` and configure the database credentials to match the ones of your local postgres installation.
+
 ### Initial setup
 1. Make sure you have ruby installed. Type `ruby -v` to check or install: https://www.ruby-lang.org/en/documentation/installation/
 
