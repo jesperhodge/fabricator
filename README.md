@@ -62,7 +62,7 @@ If possible find a way to delve even deeper into this functionality so you can i
 ### Database
 Install PostgreSQL: https://wiki.postgresql.org/wiki/Detailed_installation_guides
 
-You need to install the headers and -dev packages from postgres as well for this to work.
+You need to install the server, headers and -dev packages from postgres as well for this to work.
 
 A problem that occurs frequently is that `bundler` cannot find the postgres config, especially on linux.
 Often, this is solved by just installing the correct packages, e.g. the -dev/-devel packages. If that does not help,
