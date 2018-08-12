@@ -62,6 +62,21 @@ If possible find a way to delve even deeper into this functionality so you can i
 ### Database
 Install PostgreSQL: https://wiki.postgresql.org/wiki/Detailed_installation_guides
 
+You need to install the headers and -dev packages from postgres as well for this to work.
+
+A problem that occurs frequently is that `bundler` cannot find the postgres config, especially on linux.
+Often, this is solved by just installing the correct packages, e.g. the -dev/-devel packages. If that does not help,
+there are several solutions: https://stackoverflow.com/questions/6040583/cant-find-the-libpq-fe-h-header-when-trying-to-install-pg-gem
+is a helpful forum thread.
+
+An easy way that will probably work is to just make symlinks to the right package files so that bundler can
+find the config file:
+
+`ln -s /usr/<postgres installation name>/bin/p* /usr/local/bin`, for example:
+
+`ln -s /usr/pgsql-10/bin/p* /usr/local/bin` will likely work on linux.
+
+
 Copy `database.example.yml` to `database.yml` and configure the database credentials to match the ones of your local postgres installation.
 
 ### Initial setup
