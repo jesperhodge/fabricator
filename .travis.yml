@@ -3,5 +3,7 @@ rbenv: 2.3.3
 before_install:
   - cp config/database.example.yml config/database.yml
   - yarn install
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+services: postgresql
 script: bundle exec rake spec
-
