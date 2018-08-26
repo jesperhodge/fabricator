@@ -1,0 +1,5 @@
+language: ruby
+rbenv: 2.3.3
+before_install: yarn install
+script: rspec
+
