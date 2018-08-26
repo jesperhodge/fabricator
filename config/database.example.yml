@@ -9,7 +9,7 @@ default: &default
 
 development:
   <<: *default
-  database: fabricator_development
+  database: travis_ci_test
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
