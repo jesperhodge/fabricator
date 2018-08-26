@@ -2,8 +2,5 @@ language: ruby
 rbenv: 2.3.3
 before_install:
   - yarn install
-install:
-  - gem install rspec
-  - bundle install
-script: rspec
+script: bundle exec rake spec
 
