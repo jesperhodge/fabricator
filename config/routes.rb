@@ -5,9 +5,14 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
 
-  resources :users, only: [] do
+  resources :users, shallow: true, only: [] do
     collection do
-      get :current_user
+      get 'current_user', to: 'users#display_current_user'
+    end
+  end
+
+  resources :users do
+    collection do
       post :login, controller: 'user_sessions'
       post :logout, controller: 'user_sessions'
     end
